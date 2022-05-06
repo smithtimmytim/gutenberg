@@ -14,12 +14,16 @@ import {
 import { pressKeyTimes } from './press-key-times';
 import { setBrowserViewport } from './set-browser-viewport';
 
+type PageUtilConstructorParams = {
+	page: Page;
+};
+
 class PageUtils {
 	browser: Browser;
 	page: Page;
 	context: BrowserContext;
 
-	constructor( page: Page ) {
+	constructor( { page }: PageUtilConstructorParams ) {
 		this.page = page;
 		this.context = page.context();
 		this.browser = this.context.browser()!;

@@ -30,6 +30,11 @@ The Playwright/Jest's [expect](https://jestjs.io/docs/expect) function.
 
 End to end test utilities for WordPress admin's user interface.
 
+```js
+const admin = new Admin( { page, pageUtils } );
+await admin.visitAdminPage( 'options-general.php' );
+```
+
 ### Editor
 
 End to end test utilities for the WordPress Block Editor.
@@ -56,7 +61,7 @@ await editor.canvas.locator( 'role=document[name="Paragraph block"i]' )
 Generic Playwright utilities for interacting with web pages.
 
 ```js
-const pageUtils = new PageUtils( page );
+const pageUtils = new PageUtils( { page } );
 await pageUtils.pressKeyWithModifier( 'primary', 'a' );
 ```
 

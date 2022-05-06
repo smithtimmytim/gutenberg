@@ -16,10 +16,10 @@ import { selectBlockByClientId } from './select-block-by-client-id';
 import { showBlockToolbar } from './show-block-toolbar';
 import { saveSiteEditorEntities } from './site-editor';
 
-interface EditorConstructorParams {
+type EditorConstructorProps = {
 	page: Page;
 	hasIframe?: boolean;
-}
+};
 
 export class Editor {
 	browser: Browser;
@@ -27,7 +27,7 @@ export class Editor {
 	context: BrowserContext;
 	#hasIframe: boolean;
 
-	constructor( { page, hasIframe = false }: EditorConstructorParams ) {
+	constructor( { page, hasIframe = false }: EditorConstructorProps ) {
 		this.page = page;
 		this.context = page.context();
 		this.browser = this.context.browser()!;
