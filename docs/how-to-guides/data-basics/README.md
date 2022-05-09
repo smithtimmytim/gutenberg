@@ -11,3 +11,4 @@ You may review the [finished app](https://github.com/WordPress/gutenberg-example
 1. [Setup](/docs/how-to-guides/data-basics/1-data-basics-setup.md)
 2. [Building a basic list of pages](/docs/how-to-guides/data-basics/2-building-a-list-of-pages.md)
 3. [Building an edit form](/docs/how-to-guides/data-basics/3-building-an-edit-form.md)
+5. [Adding a delete button](/docs/how-to-guides/data-basics/5-adding-a-delete-button.md)
