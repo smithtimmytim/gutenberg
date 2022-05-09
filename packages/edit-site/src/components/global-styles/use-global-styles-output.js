@@ -470,19 +470,6 @@ export const toStyles = ( tree, blockSelectors, hasBlockGapSupport ) => {
 		ruleset = ruleset + `${ selector }{${ declarations.join( ';' ) };}`;
 	} );
 
-	nodesWithStyles.forEach( ( { selector, styles } ) => {
-		const declarations = getStylesDeclarations(
-			styles,
-			selector,
-			useRootVars
-		);
-
-		if ( declarations.length === 0 ) {
-			return;
-		}
-		ruleset = ruleset + `${ selector }{${ declarations.join( ';' ) };}`;
-	} );
-
 	/* Add alignment / layout styles */
 	ruleset =
 		ruleset +
