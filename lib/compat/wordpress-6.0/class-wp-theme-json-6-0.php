@@ -380,7 +380,7 @@ class WP_Theme_JSON_6_0 extends WP_Theme_JSON_5_9 {
 	 *
 	 * @param string $selector The selector to generate rules for.
 	 * @param object $theme_json A copy of $this->theme_json.
-	 * @param bool $use_root_vars whether or not the theme has opted in to root padding variables.
+	 * @param bool   $use_root_vars whether or not the theme has opted in to root padding variables.
 	 * @return string The rules for the root selector.
 	 */
 	protected static function additional_root_selector_rules( $selector, $theme_json, $use_root_vars ) {
